@@ -12,8 +12,8 @@ void DynObjCluster::Init()
     // pub_ground_points = pub_ground_points_in;
     // xyz_origin << -20., -20., -20.;
     // maprange << 40., 40., 40.;
-    xyz_origin << -100., -100., -20.;
-    maprange << 200., 200., 40.;
+    xyz_origin << 0., 0., 0.;
+    maprange << 30., 30., 10.;
     GridMapedgesize_xy = ceil(maprange(0) / Voxel_revolusion);
     GridMapedgesize_z = ceil(maprange(2) / Voxel_revolusion);
     GridMapsize = GridMapedgesize_xy * GridMapedgesize_xy * GridMapedgesize_z;

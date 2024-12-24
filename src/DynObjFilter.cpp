@@ -171,7 +171,7 @@ void  DynObjFilter::init(ros::NodeHandle& nh)
     {
         time_breakdown_out.open(time_breakdown_file, ios::out); 
     }    
-    Cluster.Init();
+    // Cluster.Init();
 }
 
 void  DynObjFilter::filter(PointCloudXYZI::Ptr feats_undistort, const M3D & rot_end, const V3D & pos_end, const double & scan_end_time)
@@ -347,7 +347,7 @@ void  DynObjFilter::filter(PointCloudXYZI::Ptr feats_undistort, const M3D & rot_
     header_clus.frame_id = frame_id;
     if (cluster_coupled || cluster_future)
     {
-        Cluster.Clusterprocess(dyn_tag_cluster, *laserCloudDynObj, raw_points_world, header_clus, rot_end, pos_end);
+        // Cluster.Clusterprocess(dyn_tag_cluster, *laserCloudDynObj, raw_points_world, header_clus, rot_end, pos_end);
         for(int i = 0; i < size; i++)
         {   
             PointType po;
