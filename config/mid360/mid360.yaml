@@ -1,6 +1,6 @@
 dyn_obj:
     points_topic: "/cloud_registered_body"
-    odom_topic: "/aft_mapped_to_init"
+    odom_topic: "/Odometry"
     frame_id: "camera_init"
     pc_topic: "/livox/lidar"
 
