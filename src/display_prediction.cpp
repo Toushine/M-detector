@@ -29,7 +29,7 @@
 #include <unistd.h> 
 #include <dirent.h> 
 #include <iomanip>
-#include <livox_ros_driver/CustomMsg.h>
+#include <livox_ros_driver2/CustomMsg.h>
 
 using namespace std;
 
@@ -179,7 +179,7 @@ void PointsCallback(const sensor_msgs::PointCloud2ConstPtr& msg_in)
 }
 
 
-void AviaPointsCallback(const livox_ros_driver::CustomMsg::ConstPtr &msg_in)
+void AviaPointsCallback(const livox_ros_driver2::CustomMsg::ConstPtr &msg_in)
 {   
     PointCloudXYZI::Ptr points_in(new PointCloudXYZI());
     points_in->resize(msg_in->point_num);
